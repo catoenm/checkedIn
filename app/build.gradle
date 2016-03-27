@@ -26,4 +26,5 @@ dependencies {
     compile 'com.android.support:design:23.0.1'
     compile 'com.getpebble:pebblekit:3.0.0'
     compile 'com.google.android.gms:play-services-maps:8.1.0'
+    compile 'com.akexorcist:googledirectionlibrary:1.0.4'
 }

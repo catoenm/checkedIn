@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             switch(v.getId()){
                 case R.id.ContinueButton:
                     Toast.makeText(getApplicationContext(), "Entering Maps Activity", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                    Intent intent = new Intent(MainActivity.this, SimpleDirectionActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.PingRight:
