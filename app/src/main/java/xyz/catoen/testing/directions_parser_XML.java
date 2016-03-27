@@ -5,10 +5,7 @@ package xyz.catoen.testing;
  */
 import javax.xml.xpath.*;
 
-public class directions_parser_XML {
-    get_directions(){
-
-    }
-
-
-}
+//public class directions_parser_XML {
+//    get_directions(){
+//
+//    }
