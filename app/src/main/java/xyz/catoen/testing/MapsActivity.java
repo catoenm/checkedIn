@@ -15,7 +15,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback  {
 
@@ -48,6 +52,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+
+    private void get_directions(String originID, String destinationID) {
+
+        String directionsRequestURL = "https://maps.googleapis.com/maps/api/directions/xml?origin=" + originID +
+                "&destination=" + destinationID + "&mode=walking";
+
+        try {
+            URL directionsURL = new URL(directionsRequestURL);
+            HttpsURLConnection con = (HttpsURLConnection) directionsURL.openConnection();
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
